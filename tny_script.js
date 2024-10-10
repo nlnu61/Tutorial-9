@@ -31,17 +31,23 @@ document.getElementById("dateNow").innerHTML =
  /* Calculate the days left in the current day */ 
 var daysLeft = (newYear - currentDay) / (1000 * 60 * 60 * 24);
 
- /* Calculate the hours left in the current day */ 
+/* Calculate the hours left in the current day */ 
 var hrsLeft = (daysLeft - Math.floor(daysLeft))*24;
+
+ /* Calculate the minutes leftover in the day */ 
+ var minsLeft = (hrsLeft - Math.floor(hrsLeft))*60;
+
+ /* Calculate the seconds leftover in the day */ 
+ var secsLeft = (minsLeft - Math.floor(minsLeft))*60;
 
 document.getElementById("dateNow").innerHTML=`m/d/y/ <br />h:m:s`;
 
  /*Display the time left until New Years Eve */
 
-document.getElementById("days").textcontent=Math.floor(daysLeft);
-document.getElementById("hrs").textcontent="hh";
-document.getElementById("mins").textcontent="mm";
-document.getElementById("secs").textcontent="ss";
+document.getElementById("days").textcontent = Math.floor(daysLeft);
+document.getElementById("hrs").textcontent = Math.floor"hh";
+document.getElementById("mins").textcontent = Math.floor"mm";
+document.getElementById("secs").textcontent = Math.floor"ss";
 
 
 
