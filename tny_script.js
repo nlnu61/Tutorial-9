@@ -10,9 +10,9 @@
    Date: 2024-10-08 
 
 */
-/* Display date & time */
-document.getElementById("dateNow").innerHTML=`m/d/y/ <br />h:m:s`;
 
+/* Function to create and run the countdown clock */
+function runclock(){
 
 /* store the current date & time */
 var currentDay = new Date("October, 10, 2024 14:35:05");
@@ -49,5 +49,6 @@ document.getElementById("hrs").textcontent = Math.floor"hh";
 document.getElementById("mins").textcontent = Math.floor"mm";
 document.getElementById("secs").textcontent = Math.floor"ss";
 
+}
 
-
+runclock();
